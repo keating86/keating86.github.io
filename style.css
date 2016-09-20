@@ -18,8 +18,10 @@ hr:after { content: "⛩"; display: inline-block; position: relative; top: -0.7e
 .interview { margin: 0em 1em; }
 
 @media only screen                              and (min-width: 700px)  { header { font-size: 72pt;  margin: 0.8em } hr, .interview { margin-left:  2em; margin-right:  2em } }
-@media only screen and (orientation: landscape) and (min-width: 1280px) { header { font-size: 108pt; margin: 1.0em } hr, .interview { margin-left: 5em; margin-right:  5em } .interview { column-count: 2; column-gap: 3em; } }
-@media only screen and (orientation: landscape) and (min-width: 1900px) { header { font-size: 144pt; margin: 1.0em } hr, .interview { margin-left: 10em; margin-right: 10em } }
+@media only screen and (orientation: landscape) and (min-width: 1280px) { header { font-size: 108pt; margin: 1.0em } hr, .interview { margin-left: 5em; margin-right:  5em } }
+@media only screen and (orientation: landscape) and (min-width: 1900px) { header { font-size: 144pt; margin: 1.0em } hr, .interview { margin-left: 10em; margin-right: 10em } .interview { column-count: 2; column-gap: 3em; } }
+
+@media only print { .interview { column-count: 2; column-gap: 1em; } }
 
 #credits { font-size: 10pt; }
 @media only screen and (min-width: 700px) { #credits { font-size: 12pt; } }
